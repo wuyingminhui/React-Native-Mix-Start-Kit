@@ -7,11 +7,14 @@
 //
 
 import UIKit
+import React
 
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+//        self.navigationController?.navigationBar.translucent = true
+        self.navigationController?.setNavigationBarHidden(true, animated: false)
         // Do any additional setup after loading the view, typically from a nib.
     }
 
@@ -20,6 +23,43 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    @IBAction func goToRNP1(sender: UIButton) {
+        print("button click1")
+        initRNP1()
+    }
 
+    @IBAction func goToRNP2(sender: UIButton) {
+        print("button click2")
+        initRNP2()
+    }
+    
+    func initRNP1 () {
+        let jsCodeLocation = NSURL(string: "http://localhost:9988/RNiOS/RNPage1/index.ios.bundle?platform=ios&dev=true&minify=false")
+        let bridge = RCTBridge(bundleURL: jsCodeLocation,
+                               moduleProvider: nil,
+                               launchOptions: nil)
+        
+        let rootView = RCTRootView(bridge: bridge, moduleName: "RNPF", initialProperties: nil)
+        let vc = UIViewController()
+        rootView.frame = CGRectMake(0, 0, CGRectGetWidth(UIScreen.mainScreen().bounds), CGRectGetHeight(UIScreen.mainScreen().bounds))
+        vc.view.addSubview(rootView)
+        self.navigationController?.setNavigationBarHidden(false, animated: false)
+        self.navigationController?.navigationBar.tintColor = UIColor.blueColor()
+        self.navigationController?.pushViewController(vc, animated: false)
+    }
+    
+    func initRNP2 () {
+        let jsCodeLocation = NSURL(string: "http://localhost:9988/RNiOS/RNPage2/index.ios.bundle?platform=ios&dev=true&minify=false")
+        let bridge = RCTBridge(bundleURL: jsCodeLocation,
+                               moduleProvider: nil,
+                               launchOptions: nil)
+        
+        let rootView = RCTRootView(bridge: bridge, moduleName: "RNPS", initialProperties: nil)
+        let vc = UIViewController()
+        vc.view = rootView
+        self.navigationController?.setNavigationBarHidden(false, animated: false)
+        self.navigationController?.navigationBar.tintColor = UIColor.blueColor()
+        self.navigationController?.pushViewController(vc, animated: false)
+    }
 }
 

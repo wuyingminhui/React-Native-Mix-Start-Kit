@@ -14,6 +14,7 @@
 		962520E11D4A16060044491D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 962520DF1D4A16060044491D /* LaunchScreen.storyboard */; };
 		962520EC1D4A16070044491D /* RNEmbedTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 962520EB1D4A16070044491D /* RNEmbedTests.swift */; };
 		962520F71D4A16070044491D /* RNEmbedUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 962520F61D4A16070044491D /* RNEmbedUITests.swift */; };
+		98FD1DC33F49B191BDF2590C /* Pods_RNEmbed.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F198E7F76FAD5A2F00784C05 /* Pods_RNEmbed.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +35,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		32496F3FB78E2181345BD6EC /* Pods-RNEmbed.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RNEmbed.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RNEmbed/Pods-RNEmbed.debug.xcconfig"; sourceTree = "<group>"; };
+		6E5BF1D82DAC0D87D3DC23A9 /* Pods-RNEmbed.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RNEmbed.release.xcconfig"; path = "Pods/Target Support Files/Pods-RNEmbed/Pods-RNEmbed.release.xcconfig"; sourceTree = "<group>"; };
+		8A446CD1FC7119C610E81A4C /* Pods_RNEmbed_RNEmbedTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RNEmbed_RNEmbedTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		962520D31D4A16060044491D /* RNEmbed.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RNEmbed.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		962520D61D4A16060044491D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		962520D81D4A16060044491D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +51,7 @@
 		962520F21D4A16070044491D /* RNEmbedUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RNEmbedUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		962520F61D4A16070044491D /* RNEmbedUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RNEmbedUITests.swift; sourceTree = "<group>"; };
 		962520F81D4A16070044491D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F198E7F76FAD5A2F00784C05 /* Pods_RNEmbed.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RNEmbed.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				98FD1DC33F49B191BDF2590C /* Pods_RNEmbed.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +87,8 @@
 				962520EA1D4A16070044491D /* RNEmbedTests */,
 				962520F51D4A16070044491D /* RNEmbedUITests */,
 				962520D41D4A16060044491D /* Products */,
+				E76B71802EBF5C1606393A65 /* Pods */,
+				9C72216EBB730E6F49F01005 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -125,6 +133,24 @@
 			path = RNEmbedUITests;
 			sourceTree = "<group>";
 		};
+		9C72216EBB730E6F49F01005 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F198E7F76FAD5A2F00784C05 /* Pods_RNEmbed.framework */,
+				8A446CD1FC7119C610E81A4C /* Pods_RNEmbed_RNEmbedTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E76B71802EBF5C1606393A65 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				32496F3FB78E2181345BD6EC /* Pods-RNEmbed.debug.xcconfig */,
+				6E5BF1D82DAC0D87D3DC23A9 /* Pods-RNEmbed.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +158,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 962520FB1D4A16070044491D /* Build configuration list for PBXNativeTarget "RNEmbed" */;
 			buildPhases = (
+				192F47168C92E67920C127D0 /* 📦 Check Pods Manifest.lock */,
 				962520CF1D4A16060044491D /* Sources */,
 				962520D01D4A16060044491D /* Frameworks */,
 				962520D11D4A16060044491D /* Resources */,
+				5566D0F39E3B22137B8223AD /* 📦 Embed Pods Frameworks */,
+				2C572E477D3A8C393F8F55FA /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -250,6 +279,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		192F47168C92E67920C127D0 /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		2C572E477D3A8C393F8F55FA /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RNEmbed/Pods-RNEmbed-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5566D0F39E3B22137B8223AD /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RNEmbed/Pods-RNEmbed-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		962520CF1D4A16060044491D /* Sources */ = {
@@ -399,23 +476,27 @@
 		};
 		962520FC1D4A16070044491D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 32496F3FB78E2181345BD6EC /* Pods-RNEmbed.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = RNEmbed/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = jason.RNEmbed;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		962520FD1D4A16070044491D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6E5BF1D82DAC0D87D3DC23A9 /* Pods-RNEmbed.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = RNEmbed/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = jason.RNEmbed;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -484,6 +565,7 @@
 				962520FD1D4A16070044491D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		962520FE1D4A16070044491D /* Build configuration list for PBXNativeTarget "RNEmbedTests" */ = {
 			isa = XCConfigurationList;
@@ -492,6 +574,7 @@
 				962521001D4A16070044491D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		962521011D4A16070044491D /* Build configuration list for PBXNativeTarget "RNEmbedUITests" */ = {
 			isa = XCConfigurationList;
@@ -500,6 +583,7 @@
 				962521031D4A16070044491D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

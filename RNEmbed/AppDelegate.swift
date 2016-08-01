@@ -16,6 +16,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        
+        let myenter = UIStoryboard.init(name: "Main", bundle: nil)
+        self.window = UIWindow(frame: UIScreen.mainScreen().bounds)
+        let firstViewController: UIViewController = myenter.instantiateInitialViewController()!
+        let navController = UINavigationController()
+        navController.setNavigationBarHidden(true, animated: false)
+        navController.viewControllers = [firstViewController]
+        self.window?.rootViewController = navController
+        self.window?.makeKeyAndVisible()
+    
         return true
     }
 
