@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		96112B721D53302C00126800 /* main.jsbundle in Resources */ = {isa = PBXBuildFile; fileRef = 96112B711D53302C00126800 /* main.jsbundle */; };
 		962520D71D4A16060044491D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 962520D61D4A16060044491D /* AppDelegate.swift */; };
 		962520D91D4A16060044491D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 962520D81D4A16060044491D /* ViewController.swift */; };
 		962520DC1D4A16060044491D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 962520DA1D4A16060044491D /* Main.storyboard */; };
@@ -38,6 +39,7 @@
 		32496F3FB78E2181345BD6EC /* Pods-RNEmbed.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RNEmbed.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RNEmbed/Pods-RNEmbed.debug.xcconfig"; sourceTree = "<group>"; };
 		6E5BF1D82DAC0D87D3DC23A9 /* Pods-RNEmbed.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RNEmbed.release.xcconfig"; path = "Pods/Target Support Files/Pods-RNEmbed/Pods-RNEmbed.release.xcconfig"; sourceTree = "<group>"; };
 		8A446CD1FC7119C610E81A4C /* Pods_RNEmbed_RNEmbedTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RNEmbed_RNEmbedTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		96112B711D53302C00126800 /* main.jsbundle */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = main.jsbundle; path = bundles/main.jsbundle; sourceTree = "<group>"; };
 		962520D31D4A16060044491D /* RNEmbed.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RNEmbed.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		962520D61D4A16060044491D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		962520D81D4A16060044491D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -83,6 +85,7 @@
 		962520CA1D4A16060044491D = {
 			isa = PBXGroup;
 			children = (
+				96112B711D53302C00126800 /* main.jsbundle */,
 				962520D51D4A16060044491D /* RNEmbed */,
 				962520EA1D4A16070044491D /* RNEmbedTests */,
 				962520F51D4A16070044491D /* RNEmbedUITests */,
@@ -261,6 +264,7 @@
 				962520E11D4A16060044491D /* LaunchScreen.storyboard in Resources */,
 				962520DE1D4A16060044491D /* Assets.xcassets in Resources */,
 				962520DC1D4A16060044491D /* Main.storyboard in Resources */,
+				96112B721D53302C00126800 /* main.jsbundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -426,7 +430,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -466,7 +470,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
